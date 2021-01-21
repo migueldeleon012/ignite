@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function testMe(n1, n2, n3){
+            return n1*n2*n3
+        }
+
+        function AI(greetings){
+            if (greetings == 'hello'){
+                return 'hi'
+            }else{
+                return 'I cannot understand'
+            }
+        }
+
+        function tripleSum (n1,n2,n3){
+            return n1+n2+n3
+        }
+
+        function factorial (n){
+            let total = n
+            for (let i = n-1; i > 0; i--){
+                total *=i
+            }
+            return total
+        }
+
+        function calculator(n1, n2, operand){
+            if (operand == '+'){
+                return n1+n2
+            }
+            else if (operand == '-'){
+                return n1-n2
+            }
+            else if (operand == '*'){
+                return n1*n2
+            }
+            else if (operand == '/'){
+                return n1/n2
+            }
+            else{
+                return 'please enter a valid operation'
+            }
+        }
+
+        function absolute (n){
+            return Math.abs(n)
+        }
+
+        function fizzBuzz(n){
+            if (n%3 == 0 && n%7 == 0){
+                return 'fizzbuzz'
+            }
+            else if(n%7 == 0){
+                return 'buzz'
+            }
+            else if(n%3 == 0){
+                return 'fizz'
+            }
+        }
+
+        function positive(n){
+            if(n>0){
+                return true
+            } else{
+                return false
+            }
+        }
+
+
+        function transform(n){
+            let array = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine']
+            return array[n]
+        }
+
+        function sum(arr){
+            let result = 0
+            for (let i = 0; i < arr.length; i++){
+                result += arr[i]
+            }
+            return result
+        }
+
+        function min(array){
+            return Math.min(...array)
+        }
+
+        function arrayFi(obj){
+            let result= [];
+            for(let i = 0; i < Object.keys(obj).length; i++){
+                result.push(Object.keys(obj)[i]) 
+                result.push(Object.values(obj)[i])
+            }
+            return result
+        }
+
+        function objectFi(array){
+            let obj = {}
+            for(let i = 1; i < array.length ; i+=2){
+                obj[array[i]] = array[i+1]
+            }
+            return obj
+        }
+    </script>
+</body>
+</html>
+
+
+obj.arrayFi[i] = arrayFi[i+1]
